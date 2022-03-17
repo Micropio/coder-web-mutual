@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&family=Roboto+Slab:wght@100;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
 </head>
 
 <body>
-
-<section class="todo">
 
     <header class="header">
         <div class="header__box">
@@ -24,48 +25,82 @@
         <nav class="menu"> 
             <a class="btn-open-sidebar" href="#sidebar"><i class="fas fa-bars"></i>
             <ul class="menu_lista" id="sidebar" >  
-                <li class="menu_item"><a class="menu_boton" href="../index.html">inicio</a></li>
-                <li class="menu_item"><a class="menu_boton nav__enlace--activo" href="../pages/institucional.html">institucional</a></li>
-                <li class="menu_item"><a class="menu_boton" href="../pages/beneficios.html">beneficios</a></li>
-                <li class="menu_item"><a class="menu_boton" href="../pages/sucursales.html">sucursales</a></li>
-                <li class="menu_item"><a class="menu_boton nav__item--orden" href="../pages/contacto.html">contacto</a></li>
-                <li class="menu_item menu_itemo--ocultar"><a class="menu_boton btn-open-sidebar" href="#">X CERRAR X</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../index.html">Inicio</a></li>
+                <li class="menu_item"><a class="btn btn-light" href="../pages/institucional.html">Institucional</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/beneficios.html">Beneficios</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/sucursales.html">Sucursales</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/contacto.html">Contacto</a></li>
+                <li class="menu_item menu_itemo--ocultar"><a class="btn-close btn-close-white" aria-label="Close" href="#"></a></li> 
             </ul>
         </nav>
         </div> 
     </header>
 
+    <section class="todo">
+
     <section id="afiliacion" class="todo__box">
-        <div class="box__izq" > 
+        <div> 
             <h1>La historia de una gran mutual</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facilis incidunt voluptate optio accusamus labore libero aspernatur neque. Amet repellendus sit vitae consectetur accusantium incidunt dolor corrupti atque id nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nisi reprehenderit suscipit doloribus quibusdam. Nobis beatae ipsam placeat, voluptatem molestias veritatis quia vitae repellat nam corporis veniam atque eligendi nesciunt.</p>
-        </div>
-        <div class="box__der">
-            <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/QEY0veirJHM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     
     <section id="sucursales" class="todo__box">
-        <div class="box__izq">
-            <img class="box__img" src="../Imagenes/pastelero_beneficio.jpeg" alt="">
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../Imagenes/Carrusel 003.jpg" class="d-block w-100" alt="carrusel1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Imagenes/Carrusel 004.jpeg" class="d-block w-100" alt="carrusel2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Imagenes/Carrusel 005.jpg" class="d-block w-100" alt="carrusel3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-        <div class="box__der">
-            <img class="box__img" src="../Imagenes/turismo.jpeg" alt="">
-        </div>
-        
     </section>
 
+    <section id="noticias" class="todo__box">
+    
+    </section>
+
+</section>
+
+<div class="sociales">
+        <a class="icon icon-whatsapp" href="https://api.whatsapp.com/"><i  class="fab fa-whatsapp"></i></a>
+        <a class="icon icon-facebook" href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a class="icon icon-twitter" href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
+        <a class="icon icon-youtube" href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+        <a class="icon icon-instagram" href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+</div>
+
     <footer class="footer">
-        <div class="footer__box">
+        <div class="header__box">
             <div>
             <a href="./index.html"><img class="logofooter" src="../Imagenes/Logo_2.png" alt="Logotipo de Pasteleros"></a>
             </div>
             <nav>
             <ul class="menu_listaparalelo">
-                <li class="menu_item"><a class="menu_boton" href="../pages/institucional.html">institucional</a></li>
-                <li class="menu_item"><a class="menu_boton" href="../pages/beneficios.html">beneficios</a></li>
-                <li class="menu_item"><a class="menu_boton" href="../pages/sucursales.html">sucursales</a></li>
-                <li class="menu_item"><a class="menu_boton" href="../pages/contacto.html">contacto</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/institucional.html">Institucional</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/beneficios.html">beneficios</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/sucursales.html">sucursales</a></li>
+                <li class="menu_item"><a class="btn btn-outline-light" href="../pages/contacto.html">contacto</a></li>
                </ul>
             </nav>
             <div>
@@ -73,20 +108,7 @@
             </div>
         </div>
     </footer>
-</section>
-
-<section>
-    <div>
-        <ul class="sociales">
-            <li class="icon"><a href="https://api.whatsapp.com/"><i class="fab fa-whatsapp"></i></a></li>
-            <li class="icon"><a href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-            <li class="icon"><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a></li>
-            <li class="icon"><a href="https://www.youtube.com/"><i class="fab fa-instagram"></i></a></li>
-            <li class="icon"><a href="https://www.instagram.com/?hl=es-la"><i class="fabfa-instagram"></i></a></li>
-        </ul> 
-    </div>
-</section>
-
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+    
 </body>
 </html>
