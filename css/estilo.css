@@ -306,16 +306,6 @@ header {
   margin-top: 5rem;
 }
 
-.botonenvio {
-  margin-bottom: 100px;
-  margin-top: 5px;
-  margin-left: 25px;
-  padding: 5px;
-  text-align: justify;
-  font-family: 'Roboto Slab', serif;
-  font-size: 18px;
-}
-
 footer {
   width: 100%;
   height: 120px;
@@ -408,11 +398,9 @@ footer {
   .todo {
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
-    "header"
     "afiliacion"
     "sucursales"
-    "noticias"
-    "footer";
+    "noticias";
     row-gap: 2rem;
   }
   
@@ -440,13 +428,18 @@ footer {
   }
   
   .encabezadologo {
-   width: 50%;
-   height: auto;
-   padding: 1rem;
-   margin-left: 1rem;
-   align-items: center;
+    width: 85%;
+    height: auto;
+    padding: 1rem;
+    margin-left: 1rem;
   }
   
+  .menu_listaparalelo {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0rem;
+  }
   .menu_item {
     flex-wrap: wrap;
   }
@@ -465,16 +458,17 @@ footer {
   .todo__box {
     flex-direction: column;
     justify-items: auto;
-    width: 100%;
+    width: auto;
     height: auto;
     padding: 1rem;
   }
   
   .todo__boxcolor {
     flex-direction: column;
-    justify-items: auto;
-    width: 100%;
+    width: auto;
     height: auto;
+    margin: 1rem;
+    justify-content: center;
   }
   
   .todo__boxnoticias {
@@ -484,9 +478,9 @@ footer {
   }
   
   .box__der, .box__izq {
-    max-width: 300px;
+  
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: left;
     align-items: center;
   }
@@ -499,7 +493,11 @@ footer {
     width: 100%;
     height: 100%;
   }
-
+  
+  .galeria {
+    flex-direction: column;
+  }
+  
   .iframe {
     width: 100%;
     height: auto;
@@ -508,17 +506,17 @@ footer {
   
   
   .logo {
-    width: 50%;
-    height: auto;
+    width: auto;
   }
   
   .formulario {
-    width: auto;
-    height: auto;
+    width: 25%;
+    height: 25%;
   }
   
+  
   .listasucursales {
-    max-width: 300px;
+    max-width: auto;
     width: auto;
     height: 100%;
     justify-content: center;
@@ -540,7 +538,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .btn-open-sidebar {
     display: inline-block;
     background-color: #f19a2d;
@@ -551,7 +549,7 @@ footer {
   .menu_lista {
     background-color: #f19a2d;
     width: 70%;
-    max-width: 400px;
+    max-width: auto;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -571,29 +569,33 @@ footer {
   .menu_itemo--ocultar {
     display: block;
   }
+  
+  .menu_listaparalelo {
+    flex-direction: column;
+  }
+  
+  .sociales {
+      position: relative;
+      right: 0;
+      top: 11.8%;
+      flex-direction: row;
+      z-index: 100;
+    }
+  
+  .icon-instagram {
+      border-radius: 0 1rem 0 0;
+    }
+  
+  }
 
-.menu_listaparalelo {
- justify-content: center;
- flex-direction: column;
- margin: 0;
- padding: 0rem;
-}
-
-.galeria {
- flex-direction: column;
-}
-
-}
 
 @media screen and (max-width: 600px) {
 .todo {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: 
-  "header"
   "afiliacion"
   "sucursales"
-  "noticias"
-  "footer";
+  "noticias";
   row-gap: 2rem;
 }
 
@@ -658,9 +660,10 @@ footer {
 
 .todo__boxcolor {
   flex-direction: column;
-  justify-items: auto;
   width: auto;
   height: auto;
+  margin: 1rem;
+  justify-content: center;
 }
 
 .todo__boxnoticias {
@@ -767,11 +770,15 @@ footer {
 }
 
 .sociales {
-  position: fixed;
-  flex-direction: row;
-  align-items: center;
-  top: 90%;
-}
+    position: relative;
+    right: 0;
+    top: 11.8%;
+    flex-direction: row;
+    z-index: 100;
+  }
 
+.icon-instagram {
+    border-radius: 0 1rem 0 0;
+  }
 
 }
